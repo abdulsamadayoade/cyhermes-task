@@ -1,0 +1,22 @@
+// LAYOUT
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+// SIDE BAR
+.sidebar {
+    flex: 0 0 33%;
+    background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem 9rem;
+    color: $color-6;
+}
+
+// MAIN CONTENT
+.main-content {
+    flex: 1;
+    background-color: $color-7;
+}

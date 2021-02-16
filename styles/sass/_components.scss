@@ -1,0 +1,109 @@
+// SIDE BAR
+.sidebar {
+
+    .logo {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        background-color: $color-7;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: .7rem;
+            left: .75rem;
+            background-color: $color-1;
+        }
+    }
+}
+
+.side-nav {
+
+    &__item {
+        margin-bottom: 1rem;
+        padding: .5rem 0;
+        position: relative;
+
+        &--active {
+            position: relative;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                top: -1rem;
+                left: -9rem;
+                width: 3px;
+                height: 150%;
+                background-color: $color-4;
+            }
+        }
+    }
+
+    &__link {
+        color: $color-6;
+        font-family: $ff-bold;
+        font-weight: 600;
+        font-size: 1.35rem;
+        letter-spacing: 1px;
+        transition: color .3s;
+
+        &--active {
+            color: $color-7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &:hover {
+            color: $color-7;
+        }
+    }
+}
+
+.get-started {
+    margin-top: -11rem;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 1px;
+        max-width: 100%;
+        border-top: 2px dashed $color-4;
+    }
+}
+
+.quote-box {
+    border: 1px solid $color-8;
+    padding: 3rem 4.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 3rem;
+        left: -4rem;
+        height: 8rem;
+        width: 8rem;
+        background-image: url('../../assets/quote.svg');
+        background-color: $color-1;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    cite {
+        display: block;
+        margin-top: 1rem;
+        font-style: normal;
+    }
+}

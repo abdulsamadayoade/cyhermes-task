@@ -1,0 +1,195 @@
+/*-------------------------- FONTS ---------------------------*/
+@font-face {
+  font-family: 'DMSans Regular';
+  src: url("../../textfont/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans Bold';
+  src: url("../../textfont/DMSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-------------------------- VARIABLES ---------------------------*/
+/*-------------------------- PRESETS ---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "DMSans Regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-------------------------- TYPOGRAPHY ---------------------------*/
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 33%;
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 9rem;
+  color: #dfdfdf99;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #FFFFFF;
+}
+
+.sidebar .logo {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.sidebar .logo::before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: .7rem;
+  left: .75rem;
+  background-color: #232323;
+}
+
+.side-nav__item {
+  margin-bottom: 1rem;
+  padding: .5rem 0;
+  position: relative;
+}
+
+.side-nav__item--active {
+  position: relative;
+}
+
+.side-nav__item--active::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: -9rem;
+  width: 3px;
+  height: 150%;
+  background-color: #FFCA00;
+}
+
+.side-nav__link {
+  color: #dfdfdf99;
+  font-family: "DMSans Regular", sans-serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  transition: color .3s;
+}
+
+.side-nav__link--active {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-nav__link:hover {
+  color: #FFFFFF;
+}
+
+.get-started {
+  margin-top: -11rem;
+  font-size: 1.2rem;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.get-started::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 1px;
+  max-width: 100%;
+  border-top: 2px dashed #FFCA00;
+}
+
+.quote-box {
+  border: 1px solid #777;
+  padding: 3rem 4.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.quote-box::before {
+  content: '';
+  position: absolute;
+  top: 3rem;
+  left: -4rem;
+  height: 8rem;
+  width: 8rem;
+  background-image: url("../../assets/quote.svg");
+  background-color: #232323;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote-box cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+}
