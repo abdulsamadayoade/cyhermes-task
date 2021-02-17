@@ -179,7 +179,6 @@
     }
 
     .row-2 {
-        // border: 1px solid red;
         margin-top: 1rem;
         padding: 3rem 0;
         display: flex;
@@ -314,4 +313,88 @@
         }
     }
 
+    .row-3 {
+        h2 {
+            color: $color-8;
+            font-size: 1.4rem;
+            letter-spacing: .5px;
+            margin-bottom: .2rem;
+            font-weight: 600;
+        }
+
+        h2 + span {
+            color: $color-8;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .user__slider {
+            width: 100%;
+        }
+
+        .slider {
+            width: 100%;
+            height: 7rem;
+
+            .show-value {
+                position: relative;
+                width: 100%;
+                height: 2.5rem;
+
+                span {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    position: absolute;
+                    color: $color-2;
+                    text-align: center;
+                    line-height: 2;
+                    left: 50%;
+                    transform: translateX(-50%) scale(0);
+                    transform-origin: bottom;
+                    transition: transform 300ms ease-in-out;
+                }
+
+                span.active {
+                    transform: translateX(-50%) scale(1);
+                }
+            }
+
+            input[type="range"] {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 2px;
+                background: $color-2;
+                border-radius: 2px;
+                border: none;
+                outline: none;
+            }
+
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 2rem;
+                height: 2rem;
+                background: $color-2;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .range {
+                margin-top: 1.5rem;
+                position: relative;
+                div {
+                    position: absolute;
+                    top: -4.5rem;
+                    color: $color-1;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+
+                div:nth-child(2) {
+                    right: 0px;
+                }
+            }
+
+
+        }
+    }
 }

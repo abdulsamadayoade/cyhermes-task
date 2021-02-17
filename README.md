@@ -1,2 +1,2 @@
 # cyhermes-task
- cyhermes job test for second stage
+Second stage of Cyhermes job test.
