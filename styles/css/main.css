@@ -195,47 +195,18 @@ ul {
   font-style: normal;
 }
 
-.main-content .row-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-content .col-2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content .col-2 .currency {
-  color: #b4cbff;
-  font-size: 1rem;
-  font-weight: 900;
-}
-
-.main-content .col-2 .amount {
-  color: #4981F2;
-  font-size: 1.8rem;
-  font-weight: 900;
-  font-family: "DMSans Regular", sans-serif;
-}
-
-.main-content .col-2 .amount--sub-text {
-  font-weight: 600;
-  color: #777;
-  font-size: 1.4rem;
-}
-
-.main-content .col-2 .amount--sub-text span {
-  font-size: .8rem;
-  letter-spacing: .5px;
-}
-
-.main-content h2 {
+.main-content h3 {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: #777;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  font-weight: 900;
 }
 
 .main-content h1 {
@@ -255,4 +226,172 @@ ul {
 .main-content .sub-text {
   font-size: 1.1rem;
   color: #777;
+}
+
+.main-content .row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content .row-1 .col-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .row-1 .col-2 .currency {
+  color: #b4cbff;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.main-content .row-1 .col-2 .amount {
+  color: #4981F2;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: "DMSans Regular", sans-serif;
+}
+
+.main-content .row-1 .col-2 .amount--sub-text {
+  font-weight: 600;
+  color: #777;
+  font-size: 1.4rem;
+}
+
+.main-content .row-1 .col-2 .amount--sub-text span {
+  font-size: .8rem;
+  letter-spacing: .5px;
+}
+
+.main-content .row-2 {
+  margin-top: 1rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-content .row-2 .col-1 {
+  background-color: #FFFFFF;
+  box-shadow: -15px 25px 15px 5px rgba(153, 180, 235, 0.1), 1px 25px 15px 5px rgba(153, 180, 235, 0.1);
+  flex-basis: 50%;
+  padding: 3rem;
+  margin-right: 1rem;
+}
+
+.main-content .row-2 .col-1 p:first-child {
+  color: #FFCA00;
+  font-weight: 600;
+  letter-spacing: .3px;
+  font-size: 1.2rem;
+}
+
+.main-content .row-2 .col-1 .currency {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #777;
+  display: block;
+  margin-bottom: -4px;
+}
+
+.main-content .row-2 .col-1 .amount {
+  color: #232323;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: "DMSans Regular", sans-serif;
+}
+
+.main-content .row-2 .col-1 .plan-details {
+  margin-top: 2.5rem;
+}
+
+.main-content .row-2 .col-1 .plan-details .premium {
+  margin-bottom: -1.3rem;
+}
+
+.main-content .row-2 .col-1 .plan-details p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #777;
+  font-weight: 600;
+}
+
+.main-content .row-2 .col-1 .plan-details span {
+  padding-right: .5rem;
+}
+
+.main-content .row-2 .col-1 .plan-details .divider {
+  color: #FFCA00;
+  font-size: 3rem;
+}
+
+.main-content .row-2 .col-2 {
+  border: 1px solid #4981F2;
+  border-radius: 5px;
+  flex: 1;
+  margin-left: 1rem;
+  padding: 4rem;
+  font-size: 1.25rem;
+  color: #777;
+  background-color: rgba(198, 212, 252, 0.25);
+  position: relative;
+}
+
+.main-content .row-2 .col-2::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url("../../assets/check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #91D9AA;
+}
+
+.main-content .row-2 .col-2 .basic {
+  color: #4981F2;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: "DMSans Regular", sans-serif;
+  margin-bottom: .9rem;
+}
+
+.main-content .row-2 .col-2 .trial-days {
+  font-weight: 600;
+}
+
+.main-content .row-2 .col-2 .includes {
+  margin-top: 2rem;
+  margin-bottom: .9rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  position: relative;
+}
+
+.main-content .row-2 .col-2 .includes::after {
+  content: '-------------';
+  color: #4981F2;
+  position: absolute;
+  top: 0;
+  left: 120%;
+  width: 10rem;
+  height: 1px;
+}
+
+.main-content .row-2 .col-2 li {
+  margin-bottom: .4rem;
+  position: relative;
+}
+
+.main-content .row-2 .col-2 li::before {
+  content: '-';
+  position: absolute;
+  top: 0;
+  left: -1rem;
 }

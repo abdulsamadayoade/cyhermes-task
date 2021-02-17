@@ -110,48 +110,18 @@
 
 // MAIN CONTENT
 .main-content {
-    .row-1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .col-2 {
-        display: flex;
-        flex-direction: column;
-
-        .currency {
-            color: $color-9;
-            font-size: 1rem;
-            font-weight: 900;
-        }
-
-        .amount {
-            color: $color-2;
-            font-size: 1.8rem;
-            font-weight: 900;
-            font-family: $ff-bold;
-
-            &--sub-text {
-                font-weight: 600;
-                color: $color-8;
-                font-size: 1.4rem;
-
-                span {
-                    font-size: .8rem;
-                    letter-spacing: .5px;
-                }
-            }
-        }
-    }
-
-
-    h2 {
+    h3 {
         text-transform: uppercase;
         font-size: 1rem;
         font-weight: 600;
         letter-spacing: 1px;
         color: $color-8;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+        font-weight: 900;
     }
 
     h1 {
@@ -171,6 +141,177 @@
     .sub-text {
         font-size: 1.1rem;
         color: $color-8;
+    }
+
+    .row-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+    
+            .currency {
+                color: $color-9;
+                font-size: 1rem;
+                font-weight: 900;
+            }
+    
+            .amount {
+                color: $color-2;
+                font-size: 1.8rem;
+                font-weight: 900;
+                font-family: $ff-bold;
+    
+                &--sub-text {
+                    font-weight: 600;
+                    color: $color-8;
+                    font-size: 1.4rem;
+    
+                    span {
+                        font-size: .8rem;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .row-2 {
+        // border: 1px solid red;
+        margin-top: 1rem;
+        padding: 3rem 0;
+        display: flex;
+        align-items: center;
+
+        .col-1 {
+            background-color: $color-7;
+            box-shadow: -15px 25px 15px 5px rgba(153, 180, 235, 0.1),
+                        1px 25px 15px 5px rgba(153, 180, 235, 0.1);
+            flex-basis: 50%;
+            padding: 3rem;
+            margin-right: 1rem;
+
+            p:first-child {
+                color: $color-4;
+                font-weight: 600;
+                letter-spacing: .3px;
+                font-size: 1.2rem;
+            }
+
+            .currency {
+                font-size: .9rem;
+                font-weight: 600;
+                color: $color-8;
+                display: block;
+                margin-bottom: -4px;
+            }
+
+            .amount {
+                color: $color-1;
+                font-size: 1.8rem;
+                font-weight: 900;
+                font-family: $ff-bold;
+            }
+
+            .plan-details {
+                margin-top: 2.5rem;
+
+                .premium {
+                    margin-bottom: -1.3rem;
+                }
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    color: $color-8;
+                    font-weight: 600;
+                }
+
+                span {
+                    padding-right: .5rem;
+                }
+
+                .divider {
+                    color: $color-4;
+                    font-size: 3rem;
+                }
+            }
+
+        }
+
+        .col-2 {
+            border: 1px solid $color-2;
+            border-radius: 5px;
+            flex: 1;
+            margin-left: 1rem;
+            padding: 4rem;
+            font-size: 1.25rem;
+            color: $color-8;
+            background-color: rgba(198, 212, 252, .25);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -1.5rem;
+                right: -1.5rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                background-image: url('../../assets/check.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $color-3
+            }
+
+            .basic {
+                color: $color-2;
+                font-size: 1.8rem;
+                font-weight: 900;
+                font-family: $ff-bold;
+                margin-bottom: .9rem;
+            }
+
+            .trial-days {
+                font-weight: 600;
+            }
+
+            .includes {
+                margin-top: 2rem;
+                margin-bottom: .9rem;
+                display: inline-block;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1rem;
+                letter-spacing: .5px;
+                position: relative;
+
+                &::after {
+                    content: '-------------';
+                    color: $color-2;
+                    position: absolute;
+                    top: 0;
+                    left: 120%;
+                    width: 10rem;
+                    height: 1px;
+                }
+            }
+
+            li {
+                margin-bottom: .4rem;
+                position: relative;
+
+                &::before {
+                    content: '-';
+                    position: absolute;
+                    top: 0;
+                    left: -1rem;
+                }
+            }
+        }
     }
 
 }
